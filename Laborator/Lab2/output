@@ -1,0 +1,10 @@
+#include <unistd.h>
+#include <fcntl.h>
+int main()
+{
+char buffer[4096];
+    int fd = open("ex", O_RDONLY);
+    read(fd, buffer, 4096);
+    return 0;
+}
+
