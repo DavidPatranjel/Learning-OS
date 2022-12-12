@@ -48,7 +48,7 @@ void *f(void *argc){
 
 int main(){
 	
-		pthread_t thr[NR_THREADS];
+	pthread_t thr[NR_THREADS];
     	if(pthread_mutex_init(&mtx, NULL)){
         	perror(NULL);
         	return errno;
@@ -73,6 +73,6 @@ int main(){
     	}
     	
     	///DISTRUGEREA MUTEXULUI
-		pthread_mutex_destroy(&mtx);
+	pthread_mutex_destroy(&mtx);
     	return 0;
 }
